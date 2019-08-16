@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const recipes = require('./recipes-model')
+const recpipe_ingredients = require('./r_i-model')
 
 router.get('/', (req, res) => {
-    recipes.find()
+    recpipe_ingredients.find()
         .then((response) => {
             res.status(200).json(response)
         })

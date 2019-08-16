@@ -7,5 +7,5 @@ module.exports = {
 }
 
 function find(){
-    return db('ingredients')
+    return db('recipe_ingredients')
 }
