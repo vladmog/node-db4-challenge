@@ -41,7 +41,7 @@ exports.up = function(knex) {
             .onDelete('RESTRICT')
             .onUpdate('CASCADE'); // if the PK on primary table changes, what to do?
         tbl
-            .string('ingredient_unit')
+            .string('unit_measure')
             .notNullable()
         tbl
             .real('ingredient_units')
